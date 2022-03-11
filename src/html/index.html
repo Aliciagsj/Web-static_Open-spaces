@@ -3,17 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Open Spaces</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <!-- <link rel="icon" href="./assets/images/favicon.png" /> -->
   </head>
 
   <body>
-    <div class="page">
-      <include src="./partials/header.html" title="Bienvenidos a Adalab"></include>
-      <include src="./partials/main.html"></include>
-      <include src="./partials/footer.html"></include>
+    <div class="wrapper">
+      <header class="header">
+        <a class="link-bars" href="https://adalab.es">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="menu">
+          <ul>
+            <li>productos</li>
+            <li>colecciones</li>
+            <li>tienda</li>
+            <li>inicio</li>
+          </ul>
+        </nav>
+
+        <img src="./assets/images/logo.png" alt="Logo Open Spaces" />
+      </header>
+
+      <main class="main">
+        <section class="m-hero">
+          <img src="./assets/images/header.jpg" alt="Foto creando espacios" />
+          <div>
+            <hi class="title">Disfruta creando espacios</hi>
+            <button class="hero__btn-b-dark">
+              <a class="link" href="https://adalab.es"> comprar ahora</a>
+            </button>
+          </div>
+        </section>
+        <section class="section1">Volverse</section>
+        <section class="section2"></section>
+        <section class="section3"></section>
+      </main>
+
+      <footer class="footer"></footer>
     </div>
     <script src="./assets/js/main.js"></script>
   </body>
