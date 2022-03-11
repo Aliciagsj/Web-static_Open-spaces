@@ -1,0 +1,15 @@
+@mixin text1 {
+}
+
+/*responsive*/
+@mixin tablet {
+  @media all and (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1728px) {
+    @content;
+  }
+}
