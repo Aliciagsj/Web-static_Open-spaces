@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-174px);
+}
+
+.main__hero--title {
+  @include text($f-size-1, $c-text-d, $f-weight-2);
+}
+
+.btn {
+  background-color: $c-bg-d;
+  width: 176px;
+  height: 48px;
+  gap: 10px;
+  padding: 12px 24px;
+  text-decoration: none;
+  @include text($f-size-5, $c-text-l, $f-weight-2);
+  text-transform: capitalize;
+}
