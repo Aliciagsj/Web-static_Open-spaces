@@ -22,9 +22,19 @@
 
 .send__title {
   @include text($f-size-3, $c-text-l, $f-weight-2);
+  @include tablet {
+    @include text($f-size-2, $c-text-l, $f-weight-2);
+  }
+  @include desktop {
+    @include text($f-size-1, $c-text-l, $f-weight-2);
+  }
 }
 .send__text {
   @include text($f-size-6, $c-text-l, $f-weight-1);
+
+  @include desktop {
+    @include text($f-size-5, $c-text-l, $f-weight-1);
+  }
 }
 
 .send__btn {
