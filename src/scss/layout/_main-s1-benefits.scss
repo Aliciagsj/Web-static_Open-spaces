@@ -1,14 +1,15 @@
 .container__benefit {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 208px;
-  height: 280px;
+  height: 100%;
 }
 .benefit__icon {
   align-items: center;
   width: 90px;
+  padding-bottom: 37px;
 }
 
 .container__benefit--name {

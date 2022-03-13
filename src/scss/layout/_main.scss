@@ -4,16 +4,38 @@
 }
 
 .s1-benefits {
-  margin: 0px 45px;
+  padding: 20px 45px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 2fr 2fr;
   justify-items: center;
+  row-gap: 30px;
+  column-gap: 50px;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-bottom: 73px;
+  }
+  @include desktop {
+    padding-bottom: 86px;
+  }
 }
 
 .benefits__title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
-  padding-top: 41px;
+  width: 20ch;
+
+  padding-top: 21px;
+  @include tablet {
+    grid-column: 4 span;
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 34ch;
+    @include text($f-size-1, $c-text-d, $f-weight-2);
+  }
 }
 .capital {
   text-transform: uppercase;
