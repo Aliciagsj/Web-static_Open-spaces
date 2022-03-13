@@ -1,3 +1,76 @@
-.header {
-  height: 100%;
+header {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background: url("../../assets/images/header.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /*
+  @include tablet {
+    background-position: 50% 0%;
+  }
+
+  @include desktop {
+    background-position: 50% 50%;
+  }*/
+}
+.container_header {
+  display: flex;
+  // position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 19px;
+}
+
+.header__menu {
+  position: fixed;
+  left: 33px;
+}
+
+.menu-h {
+  color: $c-bg-d;
+  width: 24px;
+  height: 24px;
+}
+
+i {
+  font-size: 24px;
+}
+
+.header__logo {
+  align-items: center;
+}
+
+.logo {
+  width: 213px;
+  height: 96px;
+}
+
+.hero__content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //position: absolute;
+  //bottom: 30px;
+}
+
+.hero__title {
+  @include text($f-size-3, $c-text-d, $f-weight-2);
+}
+
+.hero__btn {
+  width: 176px;
+  height: 48px;
+  background-color: $c-bg-d;
+  gap: 10px;
+  margin: 30px 0px;
+  padding: 12px 24px;
+  text-decoration: none;
+  @include text($f-size-5, $c-text-l, $f-weight-2);
+  text-transform: capitalize;
 }

@@ -1,0 +1,19 @@
+.container__benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 208px;
+  height: 280px;
+}
+.benefit__icon {
+  align-items: center;
+  width: 90px;
+}
+
+.container__benefit--name {
+  @include text($f-size-4, $c-text-d, $f-weight-2);
+}
+.container__benefit--descripcion {
+  @include text($f-size-5, $c-text-d, $f-weight-1);
+}

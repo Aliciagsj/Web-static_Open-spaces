@@ -1,0 +1,30 @@
+.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 87px 27px 62px 27px;
+
+  @include desktop {
+    padding-top: 61px;
+    padding-bottom: 78px;
+  }
+}
+
+.shop__title {
+  @include text($f-size-3, $c-text-d, $f-weight-2);
+}
+.shop__text {
+  @include text($f-size-6, $c-text-d, $f-weight-1);
+}
+
+.shop__img {
+  width: 100vw;
+}
