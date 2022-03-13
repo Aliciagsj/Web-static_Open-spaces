@@ -126,5 +126,6 @@ i {
 .header__nav--text {
   @include text($f-size-5, $c-text-d, $f-weight-2);
   text-decoration: none;
+  text-transform: capitalize;
   padding: 0px 10px;
 }

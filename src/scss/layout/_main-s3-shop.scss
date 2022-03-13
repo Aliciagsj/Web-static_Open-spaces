@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .shop {
@@ -13,18 +18,38 @@
   padding: 87px 27px 62px 27px;
 
   @include desktop {
-    padding-top: 61px;
-    padding-bottom: 78px;
+    padding-left: 280px;
+    align-items: flex-start;
+
+    flex-grow: 1;
   }
 }
 
 .shop__title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
+
+  @include tablet {
+    @include text($f-size-2, $c-text-d, $f-weight-2);
+  }
+
+  @include desktop {
+    @include text($f-size-1, $c-text-d, $f-weight-2);
+  }
 }
 .shop__text {
   @include text($f-size-6, $c-text-d, $f-weight-1);
+  width: 40ch;
+
+  @include desktop {
+    @include text($f-size-5, $c-text-d, $f-weight-1);
+    text-align: left;
+  }
 }
 
 .shop__img {
   width: 100vw;
+
+  @include desktop {
+    width: 100%;
+  }
 }
