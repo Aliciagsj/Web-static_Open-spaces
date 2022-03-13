@@ -74,3 +74,25 @@
     right: 187px;
   }
 }
+
+.arrow-jump {
+  animation: jumping 2s ease-in-out infinite;
+}
+
+.arrow-jump:hover {
+  color: $c-bg-m;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, -30px) scaleY(1.5);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

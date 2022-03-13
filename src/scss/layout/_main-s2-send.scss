@@ -46,4 +46,11 @@
   padding: 12px 24px;
 
   @include text($f-size-5, $c-text-l, $f-weight-2);
+
+  transition: text-decoration ease 0.5s, color ease 0.5s;
+
+  &:hover {
+    text-decoration: none;
+    color: $c-text-d;
+  }
 }
