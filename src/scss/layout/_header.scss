@@ -6,33 +6,45 @@ header {
   background-size: cover;
   position: relative;
 
-  /*
-  @include tablet {
-    background-position: 50% 0%;
-  }
+  // @include tablet {
+  //   background-position: 50% 0%;
+  // }
 
-  @include desktop {
-    background-position: 50% 50%;
-  }*/
+  // @include desktop {
+  //   background-position: 50% 50%;
+  // }
 }
 .container_header {
   display: flex;
-  // position: fixed;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 19px;
+
+  @include tablet {
+    padding-top: 39px;
+  }
 }
 
 .header__menu {
   position: fixed;
   left: 33px;
+  @include tablet {
+    left: 82px;
+  }
+
+  @include desktop {
+    left: 270px;
+  }
 }
 
 .menu-h {
   color: $c-bg-d;
   width: 24px;
   height: 24px;
+  @include desktop {
+    display: none;
+  }
 }
 
 i {
@@ -49,18 +61,38 @@ i {
 }
 
 .hero__content {
-  height: 100vh;
+  height: 80%;
+  width: 100%;
+}
+
+.hero-text {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //position: absolute;
-  //bottom: 30px;
+
+  @include tablet {
+    padding-left: 147px;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 600px;
+  }
+  @include desktop {
+    padding-left: 280px;
+  }
 }
 
 .hero__title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
+
+  @include tablet {
+    @include text($f-size-1, $c-text-d, $f-weight-2);
+    width: 16ch;
+    text-align: left;
+  }
 }
 
 .hero__btn {
@@ -73,4 +105,26 @@ i {
   text-decoration: none;
   @include text($f-size-5, $c-text-l, $f-weight-2);
   text-transform: capitalize;
+}
+
+.header__nav {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.header__nav--menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.header__nav--text {
+  @include text($f-size-5, $c-text-d, $f-weight-2);
+  text-decoration: none;
+  padding: 0px 10px;
 }
