@@ -16,11 +16,11 @@
   }
 }
 
-.send__icon {
+.send_icon {
   width: 120px;
 }
 
-.send__title {
+.send_title {
   @include text($f-size-3, $c-text-l, $f-weight-2);
   @include tablet {
     @include text($f-size-2, $c-text-l, $f-weight-2);
@@ -29,28 +29,10 @@
     @include text($f-size-1, $c-text-l, $f-weight-2);
   }
 }
-.send__text {
+.send_text {
   @include text($f-size-6, $c-text-l, $f-weight-1);
 
   @include desktop {
     @include text($f-size-5, $c-text-l, $f-weight-1);
-  }
-}
-
-.send__btn {
-  width: 176px;
-  height: 48px;
-  background-color: $c-bg-m;
-  gap: 10px;
-  margin: 12px 0px;
-  padding: 12px 24px;
-
-  @include text($f-size-5, $c-text-l, $f-weight-2);
-
-  transition: text-decoration ease 0.5s, color ease 0.5s;
-
-  &:hover {
-    text-decoration: none;
-    color: $c-text-d;
   }
 }

@@ -1,9 +1,6 @@
 .section3 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   @include desktop {
     flex-direction: row;
     justify-content: flex-end;
@@ -16,47 +13,40 @@
   justify-content: center;
   align-items: center;
   padding: 87px 27px 62px 27px;
-
   @include desktop {
     padding-left: 280px;
     align-items: flex-start;
-
     flex-grow: 1;
   }
 }
 
-.shop__title {
+.shop_title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
-
   @include tablet {
     @include text($f-size-2, $c-text-d, $f-weight-2);
   }
-
   @include desktop {
     @include text($f-size-1, $c-text-d, $f-weight-2);
   }
 }
-.shop__text {
+.shop_text {
   @include text($f-size-6, $c-text-d, $f-weight-1);
   width: 40ch;
-
   @include desktop {
     @include text($f-size-5, $c-text-d, $f-weight-1);
     text-align: left;
   }
 }
 
-.shop__img {
+.shop_img {
   height: 304px;
   width: 100%;
   background: url("../../assets/images/creando-espacios.jpg") center center
     no-repeat;
   background-size: cover;
-
   @include tablet {
     height: 474px;
   }
-
   @include desktop {
     height: 571px;
     width: 50%;

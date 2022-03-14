@@ -3,7 +3,7 @@
   background-color: $c-bg-l;
 }
 
-.s1-benefits {
+.container_benefits {
   padding: 20px 45px;
   display: grid;
   grid-template-columns: 1fr;
@@ -22,7 +22,7 @@
   }
 }
 
-.benefits__title {
+.benefits_title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
   width: 20ch;
 

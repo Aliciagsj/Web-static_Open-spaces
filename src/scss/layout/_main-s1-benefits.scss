@@ -1,4 +1,4 @@
-.container__benefit {
+.container_benefit {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -6,15 +6,15 @@
   width: 208px;
   height: 100%;
 }
-.benefit__icon {
+.benefit_icon {
   align-items: center;
   width: 90px;
   padding-bottom: 37px;
 }
 
-.container__benefit--name {
+.benefit_name {
   @include text($f-size-4, $c-text-d, $f-weight-2);
 }
-.container__benefit--descripcion {
+.benefit_description {
   @include text($f-size-5, $c-text-d, $f-weight-1);
 }

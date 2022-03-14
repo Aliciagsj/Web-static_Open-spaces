@@ -2,7 +2,7 @@
   background-color: $c-bg-d;
   height: 100%;
   padding: 56px 28px 16px 100px;
-
+  position: relative;
   @include tablet {
     padding: 71px 118px 74px;
   }
@@ -18,80 +18,67 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
   }
-
-  @include desktop {
-  }
 }
 
-.footer__items {
+.footer_items {
   width: 208px;
   height: 100%;
   padding-bottom: 10px;
 }
 
-.footer__title {
+.footer_items-title {
   @include text($f-size-4, $c-text-m, $f-weight-2);
   padding: 10px 15px;
-
   text-align: left;
 }
 
-.footer__text {
+.footer_items-text {
   text-decoration: none;
   @include text($f-size-6, $c-text-m, $f-weight-1);
   padding: 0px 15px;
   text-align: left;
 }
 
+.footer_social {
+  padding: 10px 15px;
+}
 .icons {
   color: $c-text-m;
-  padding-left: 15px;
-  padding-top: 15px;
-}
-
-.footer__contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-right: 11px;
 }
 
 .arrow {
   position: absolute;
   right: 30px;
-  padding-bottom: 10px;
-
+  bottom: 30px;
   @include tablet {
     right: 57px;
+    bottom: 74px;
   }
-
   @include desktop {
     right: 187px;
   }
 }
 
+/*ANIMACION*/
 .arrow-jump {
   animation: jumping 2s ease-in-out infinite;
 }
-
 .arrow-jump:hover {
   color: $c-bg-m;
 }
-
 @keyframes jumping {
   0% {
     transform: translate(0px, 0px);
   }
-
   50% {
     transform: translate(0px, -30px) scaleY(1.5);
   }
-
   100% {
     transform: translate(0px, 0px);
   }

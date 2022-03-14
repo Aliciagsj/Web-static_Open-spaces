@@ -12,47 +12,63 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 19px;
-
   @include tablet {
     padding-top: 39px;
   }
 }
 
-.header__menu {
+.header_menu {
   position: fixed;
   left: 33px;
   @include tablet {
     left: 82px;
   }
-
   @include desktop {
     left: 270px;
   }
 }
 
-.menu-h {
-  color: $c-bg-d;
-  width: 24px;
-  height: 24px;
+.header_menu-b {
+  color: $c-text-d;
   @include desktop {
     display: none;
   }
 }
-
-i {
+.icon-b {
   font-size: 24px;
 }
 
-.header__logo {
-  align-items: center;
+.header_nav {
+  display: none;
+  @include desktop {
+    display: inline;
+  }
 }
 
+.header_nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.header_nav-text {
+  @include text($f-size-5, $c-text-d, $f-weight-2);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0px 10px;
+}
+
+.header_logo {
+  align-items: center;
+}
 .logo {
   width: 213px;
   height: 96px;
 }
 
-.hero__content {
+.container_hero {
   height: 80%;
   width: 100%;
 }
@@ -64,66 +80,21 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   @include tablet {
     padding-left: 147px;
     justify-content: center;
     align-items: flex-start;
-
     width: 600px;
   }
   @include desktop {
     padding-left: 280px;
   }
 }
-
-.hero__title {
+.hero-title {
   @include text($f-size-3, $c-text-d, $f-weight-2);
-
   @include tablet {
     @include text($f-size-1, $c-text-d, $f-weight-2);
     width: 16ch;
     text-align: left;
   }
-}
-
-.hero__btn {
-  width: 176px;
-  height: 48px;
-  background-color: $c-bg-d;
-  gap: 10px;
-  margin: 30px 0px;
-  padding: 12px 24px;
-  text-decoration: none;
-  @include text($f-size-5, $c-text-l, $f-weight-2);
-  text-transform: capitalize;
-  transition: background-color ease 0.5s, color ease 0.5s;
-
-  &:hover {
-    background-color: $c-bg-m;
-    color: $c-bg-d;
-  }
-}
-
-.header__nav {
-  display: none;
-
-  @include desktop {
-    display: inline;
-  }
-}
-
-.header__nav--menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.header__nav--text {
-  @include text($f-size-5, $c-text-d, $f-weight-2);
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 0px 10px;
 }
